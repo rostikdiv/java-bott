@@ -1,0 +1,8 @@
+version: '3'
+services:
+  mytelegrambot:
+    build: .
+    container_name: java-bot-0.01-SNAPSHOT.jar
+    restart: always
+    ports:
+      - "8080:8080"  # Порт, на якому ваш телеграм-бот буде доступний
